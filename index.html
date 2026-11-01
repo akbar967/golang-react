@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="ms">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Courses Dashboard - Bun Hono Vue</title>
+    <title>My Courses Dashboard - Golang React</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -11,12 +11,12 @@
                 extend: {
                     colors: {
                         dark: {
-                            900: '#121212', // Background utama
-                            800: '#1a1a1a', // Sidebar & Card
-                            700: '#2a2a2a', // Hover / Border
+                            900: '#121212', // Latar belakang utama
+                            800: '#1a1a1a', // Bar sisi & Kad
+                            700: '#2a2a2a', // Hover / Sempadan
                         },
                         brand: {
-                            green: '#00a67c', // Warna tombol / progress bar
+                            green: '#00a67c', // Warna butang / bar kemajuan
                             greenHover: '#008c69'
                         }
                     }
@@ -27,10 +27,10 @@
 </head>
 <body class="bg-dark-900 text-gray-300 font-sans antialiased flex h-screen overflow-hidden">
 
-    <!-- SIDEBAR -->
+    <!-- BAR SISI -->
     <aside class="w-64 bg-dark-800 border-r border-dark-700 flex flex-col justify-between hidden md:flex">
         <div class="p-4">
-            <!-- Profil Singkat / Header Sidebar -->
+            <!-- Profil Singkat / Pengepala Bar Sisi -->
             <div class="flex items-center gap-3 mb-8 px-2">
                 <div class="w-10 h-10 rounded-full bg-gray-600 flex items-center justify-center">
                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
@@ -71,7 +71,7 @@
             </div>
         </div>
         
-        <!-- Setting Bottom -->
+        <!-- Tetapan Bawah -->
         <div class="p-4 border-t border-dark-700">
              <a href="#" class="flex items-center gap-3 px-3 py-2 text-gray-400 hover:text-white rounded-lg transition">
                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
@@ -80,10 +80,10 @@
         </div>
     </aside>
 
-    <!-- MAIN CONTENT -->
+    <!-- KANDUNGAN UTAMA -->
     <main class="flex-1 flex flex-col h-full bg-dark-900">
         
-        <!-- Top Navigation -->
+        <!-- Navigasi Atas -->
         <header class="h-16 border-b border-dark-700 flex items-center justify-between px-6 bg-dark-800/50">
             <div class="flex items-center gap-2 text-gray-300">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
@@ -91,17 +91,17 @@
             </div>
         </header>
 
-        <!-- Content Area -->
+        <!-- Ruang Kandungan -->
         <div class="p-6 overflow-y-auto">
             
-            <!-- Filters & Search -->
+            <!-- Penapis & Carian -->
             <div class="flex flex-col md:flex-row justify-between items-center mb-6 gap-4">
                 <div class="flex space-x-2">
                     <button class="px-4 py-1.5 bg-dark-700 text-white rounded-full text-sm font-medium border border-dark-700 flex items-center gap-2">
-                        All <span class="bg-red-500 text-white text-xs px-1.5 py-0.5 rounded-full">4</span>
+                        All <span class="bg-red-500 text-white text-xs px-1.5 py-0.5 rounded-full">5</span>
                     </button>
                     <button class="px-4 py-1.5 hover:bg-dark-700 text-gray-400 rounded-full text-sm font-medium transition flex items-center gap-2">
-                        eBook <span class="bg-dark-700 text-gray-300 text-xs px-1.5 py-0.5 rounded-full">4</span>
+                        eBook <span class="bg-dark-700 text-gray-300 text-xs px-1.5 py-0.5 rounded-full">5</span>
                     </button>
                     <button class="px-4 py-1.5 hover:bg-dark-700 text-gray-400 rounded-full text-sm font-medium transition flex items-center gap-2">
                         Kelas <span class="bg-dark-700 text-gray-300 text-xs px-1.5 py-0.5 rounded-full">0</span>
@@ -114,15 +114,33 @@
                 </div>
             </div>
 
-            <!-- Course Card Component: BUN HONO VUE -->
+            <!-- Komponen Kad Kursus: GOLANG REACT -->
             <div class="bg-dark-800 rounded-2xl border border-dark-700 p-1 flex flex-col md:flex-row gap-6 h-auto">
-                <!-- Course Image Cover -->
+                <!-- Muka Depan Imej Kursus -->
                 <div class="w-full md:w-[320px] shrink-0 bg-white rounded-xl p-6 text-center relative flex flex-col items-center overflow-hidden z-0">
                     
-                    <!-- Dekorasi Abstrak (Simulasi CSS) -->
-                    <div class="absolute top-0 right-0 w-32 h-32 bg-orange-400/20 rounded-full blur-2xl -z-10 transform translate-x-8 -translate-y-8"></div>
-                    <div class="absolute top-4 right-4 w-16 h-16 bg-green-500/20 rounded-full blur-xl -z-10"></div>
-                    <div class="absolute bottom-0 left-0 w-32 h-32 bg-orange-500/20 rounded-full blur-2xl -z-10 transform -translate-x-8 translate-y-8"></div>
-                    <div class="absolute bottom-8 left-4 w-16 h-16 bg-blue-500/20 rounded-full blur-xl -z-10"></div>
+                    <!-- Simulasi Hiasan Gelombang Biru (Atas & Bawah) -->
+                    <div class="absolute -top-16 -left-10 w-[150%] h-40 bg-blue-50 rounded-[50%] -z-10 transform -rotate-6"></div>
+                    <div class="absolute -top-20 -right-10 w-[120%] h-40 bg-blue-100 rounded-[50%] -z-10 transform rotate-12"></div>
+                    
+                    <div class="absolute -bottom-16 -left-10 w-[150%] h-48 bg-blue-400 rounded-[50%] -z-10 transform rotate-6"></div>
+                    <div class="absolute -bottom-12 -left-16 w-[160%] h-32 bg-blue-600 rounded-[50%] -z-10 transform -rotate-3"></div>
 
-                    <div class="flex gap-2 items-center text-xs font-bold text-gray-800 mb-6
+                    <div class="flex gap-2 items-center text-xs font-bold text-gray-800 mb-6 mt-4">
+                         <span>SANTRIKODING</span>
+                    </div>
+                    
+                    <span class="bg-blue-100 text-blue-600 text-[10px] font-bold px-3 py-1 rounded-full mb-4 z-10">UNTUK PEMULA</span>
+                    
+                    <!-- Ikon Pemegang Tempat (Placeholder) -->
+                    <div class="flex gap-3 mb-6 z-10">
+                        <div class="w-12 h-12 bg-blue-50 rounded-full border-2 border-blue-200 flex items-center justify-center text-2xl">🐹</div>
+                        <div class="w-12 h-12 bg-indigo-50 rounded-full border-2 border-indigo-200 flex items-center justify-center text-2xl text-indigo-600">⚛️</div>
+                    </div>
+                    
+                    <h3 class="text-xs text-teal-500 font-semibold tracking-wider mb-1 z-10">FULLSTACK DEVELOPER</h3>
+                    <h2 class="text-2xl font-black text-teal-500 leading-tight mb-4 z-10">GOLANG <span class="text-indigo-700">REACT</span></h2>
+                    <p class="text-[10px] text-blue-600 font-medium z-10">RESTful API • JWT • React • TypeScript • Context • Auth • Custom Hooks • TanStack Query</p>
+                    
+                    <div class="mt-auto pt-8 z-10">
+                        <p class="text-[10px] text-gray-800 font-semibold uppercase">Disusun Oleh :</p>
